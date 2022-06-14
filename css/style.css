@@ -1,0 +1,23 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+  /* background-image: url('https://api.nasa.gov/planetary/apod?api_key=7y487BbWNTzuiBjpVnkQhVpWWby80Xg7PSDQUg5e'); */
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
