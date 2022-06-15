@@ -30,6 +30,10 @@ iframe{
 }
 h1,h2,h3{
   color: white;
+  font-family: "source sans pro";
+}
+input, button{
+  font-family: "source sans pro";
 }
 /* .image{
   width: 100px;
