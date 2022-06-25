@@ -12,7 +12,10 @@ function getFetch(){
       .then(data => {
         console.log(data)
         if(data.media_type === "image"){
-          document.querySelector("img").src = data.hdurl;
+          const img = data.hdurl;
+          const bg = document.querySelector(".mainbg");
+          bg.style.backgroundImage = `url(${img})`
+          // document.querySelector("img").src = data.hdurl;
           document.querySelector("img").classList.remove("hidden");
           document.querySelector("iframe").classList.add("hidden");
         }else if(data.media_type === "video"){
@@ -20,7 +23,7 @@ function getFetch(){
           document.querySelector("img").classList.add("hidden");
           document.querySelector("iframe").classList.remove("hidden");
         }
-        document.querySelector('h3').innerText = data.explanation
+        document.querySelector('h3').innerText = data.explanation;
         document.querySelector("h2").innerText = data.title;
         document.querySelector(".credit").innerText = "by: "+data.copyright;
       })
